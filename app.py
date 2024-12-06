@@ -57,7 +57,7 @@ def download_audio():
             if os.path.exists(file_path):
                 os.remove(file_path)
 
-        return jsonify({'download_url': f'https://raganorkdownloader.serveo.net/download/{output_filename}'}), 200
+        return jsonify({'download_url': f'https://getsongragnork.serveo.net/download/{output_filename}'}), 200
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
