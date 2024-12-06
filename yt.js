@@ -12,7 +12,7 @@ Module({
   dontAddCommandList: true
 }, async (message, match) => {
   const text = match[1];
-  const api_url = "https://playraganorksong.serveo.net/audio?url=" + text;
+  const api_url = "https://getsongragnork.serveo.net/audio?url=" + text;
 
   try {
     const response = await axios.get(api_url);
