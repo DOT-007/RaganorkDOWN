@@ -26,9 +26,9 @@ APP_PID=$!
 
 # Step 3: Start Serveo tunnel with the subdomain "raganorkdownloader"
 echo "Starting Serveo tunnel..."
-ssh -R playraganorksong.serveo.net:80:localhost:5000 serveo.net &
+ssh -R raganorkdownloader.serveo.net:80:localhost:5000 serveo.net &
 
 # Wait for processes to run
-echo "Application and Serveo tunnel are running. Access it at: https://playraganorksong.serveo.net"
+echo "Application and Serveo tunnel are running. Access it at: https://raganorkdownloader.serveo.net"
 echo "Press Ctrl+C to stop."
 wait
